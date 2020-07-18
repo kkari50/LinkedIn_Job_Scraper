@@ -9,7 +9,7 @@ import datetime
 def read_sql_server(sql_query):
 
     cnct = pyodbc.connect(r"DRIVER={ODBC DRIVER 17 for SQL Server};"
-                          r"SERVER=BSLT-25\ROBINHOOD1;"
+                          r"SERVER=PC-Name\ROBINHOOD1;"
                           r"DATABASE=linkedin_scraper;"
                           r"Trusted_Connection=yes;", autocommit=True)
     print('connected_to_db')
